@@ -7,7 +7,13 @@
 //   reverse('Greetings!') === '!sgniteerG'
 
 function reverse(str) {
-    /* SOLUTION 1 */
+    debugger;
+    return str.split('').reduce((rev, char) => char + rev, '');
+}
+module.exports = reverse;
+
+reverse('asdf')
+/* SOLUTION 1 */
     // const result = str.split('');
     // result.reverse();
     // return result.join('');
@@ -19,15 +25,14 @@ function reverse(str) {
     // .join('');
 
     /* SOLUTION 3 */
-    //Create an empty string called 'reversed'
-     let reversed  = '';
-     //for each character in the provided string
-     for (let character of str) {
-        //Take the character and add it to the start of reversed
-        reversed = character + reversed;
-     }
-    //return the variable 'reversed'
-    return reversed
+    // //Create an empty string called 'reversed'
+    //  let reversed  = '';
+    //  //for each character in the provided string
+    //  for (let character of str) {
+    //     //Take the character and add it to the start of reversed
+    //     reversed = character + reversed;
+    //  }
+    // //return the variable 'reversed'
+    // return reversed
 
-}
-module.exports = reverse;
+    /* SOLUTION 4 */
