@@ -8,6 +8,9 @@
 //   palindrome("abcdefg") === false
 
 function palindrome(str) {
+    //turn string into array
+    //use every method with boolean expresion to make sure all
+    //characters in front === 
     return str.split('').every((char, i) => {
         return char === str[str.length - i - 1];
     });
